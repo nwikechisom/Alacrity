@@ -31,8 +31,13 @@ var expensivecar = cars.Max(car => car.Price);
 Console.WriteLine("List of Cars: ");
 foreach (var carItem in cars)
 {
-    Console.WriteLine($"Make: {carItem.Make} \t Price: {carItem.Price} \t Year: {carItem.Year}");
+    Console.WriteLine($"Make \t Price \t Year");
+    Console.WriteLine($"{carItem.Make} \t {carItem.Price} \t {carItem.Year}");
 }
+
+Console.WriteLine($"\n Average car price is {averageCarPrice}");
+Console.WriteLine($"\n Oldest car in lot is {oldestCar}");
+Console.WriteLine($"\n Most expensive car in lot is {expensivecar}");
 
 Console.WriteLine("Create new car: ");
 Console.WriteLine("Enter the car's make: ");
